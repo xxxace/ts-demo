@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "module": "ES6",
+        "target": "ES6",
+        // "sourceMap": true,
+        // "outDir": "./dist/js",
+        "removeComments": true,
+        "noEmitOnError": true,
+        "alwaysStrict": true,
+        "strict": true,
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "strictNullChecks": true
+    },
+    "include": [
+        "./src/**/*"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
