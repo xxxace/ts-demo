@@ -42,6 +42,7 @@ class Snake {
             
             this.moveBody();
             this.head.style.left = value + 'px';
+            this.checkBodyCollision();
         }
     }
 
@@ -61,6 +62,7 @@ class Snake {
            
             this.moveBody();
             this.head.style.top = value + 'px';
+            this.checkBodyCollision();
         }
     }
     
@@ -83,7 +85,12 @@ class Snake {
     }
 
     checkBodyCollision(){
-        
+        for(let i = 1; i<this.bodies.length; i++){
+            const body = this.bodies[i];
+           if(body.offsetLeft === this.X && body.offsetTop === this.Y){
+               throw Error("身体碰撞！")
+           }
+        }
     }
 }
 
