@@ -5,7 +5,4 @@ let msg:string = "hello world"
 console.log(msg);
 
 const game:GameController = new GameController();
-
-setInterval(()=>{
-    console.log(game.direction);
-},1000)
+console.log(game)
